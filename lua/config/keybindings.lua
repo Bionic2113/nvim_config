@@ -30,3 +30,25 @@ nm("gr", "<cmd>Trouble lsp_references<CR>") -- Show use of object in project
 -- Neo Tree {{{
 nm("<leader>e", "<cmd>NeoTreeFocusToggle<CR>") -- Toggle file explorer
 -- }}}
+
+-- -- Функция для включения плагина nvim-cmp и codeium.nvim
+-- local function enable_cmp()
+--   vim.cmd("Codeium Auth")
+--   require("cmp").setup({
+--     sources = {
+--       { name = "codeium", group_index = 1, priority = 100 },
+--     },
+--   })
+-- end
+--
+-- -- Функция для отключения плагина nvim-cmp и codeium.nvim
+-- local function disable_cmp()
+--   require("cmp").setup({ sources = {} })
+-- end
+--
+-- -- Привязка функций к сочетаниям клавиш
+-- vim.api.nvim_set_keymap("n", ",c", "<cmd>lua enable_cmp()<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", ",<leader>", "<cmd>lua disable_cmp()<CR>", { noremap = true, silent = true })
+-- opt.expandtab = true
+-- opt.tabstop = 2
+-- opt.shiftwidth = 2
